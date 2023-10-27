@@ -500,15 +500,16 @@ header a{
 	margin-bottom: 10px;
 }
 
-.contactodiseño .contactopie{
+.contactodiseño .contacto-pie {
 	background-color: white;
 	padding: 15px 10px;
-	text-align: left;
+	text-align: center;
 	color: black;
+	
 }
 
 /*formulario contacto*/
-form {
+.formulariocontacto {
 	width: 300px;
 	margin: 0 auto;
 }
@@ -571,5 +572,5 @@ input[type="submit"]:hover {
 		gap: 30px;
 		padding: 35px 0px;
 	}
-	
+
 }
