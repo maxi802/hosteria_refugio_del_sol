@@ -23,9 +23,10 @@ margin: 0;
 	line-height: normal;
 	letter-spacing: 3px;
 	margin-left: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-button{
+.reservarahoraboton{
 	font-size: 18px;
 	font-weight: bold;
 	padding: 10px 20px;
@@ -37,7 +38,7 @@ button{
 	margin-top: 30px;
 	margin-left: 60px;
 }
-button:hover{
+.reservarahoraboton:hover{
 	background-color: rgba(119, 67, 3, 0.63);
 }
 .logo{
@@ -84,6 +85,7 @@ header ul{
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	margin: 0;
 	
 }
 header ul li{
@@ -108,7 +110,7 @@ header a{
 	justify-content: center;
 	
 }
-.imagenprincipal h1{
+.textoimagenprincipal{
 	color: white;
 	font-family: ABeeZee;
 	font-style: italic;
@@ -116,7 +118,7 @@ header a{
 	line-height: normal;
 	margin-left: 60px;
 	font-size: 64px;
-	
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .textdesayuno{
@@ -148,17 +150,6 @@ header a{
 	text-align: center;
 }
 
-a .cms-edit{
-	color: transparent;
-	height: 100%;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	text-indent: -200vw;
-	top: 0;
-	width: 100%;
-	z-index: 3;
-}
 .tarjetasexpand .contendiotar{
 	overflow: visible;
 	padding-left: 8px;
@@ -168,7 +159,6 @@ a .cms-edit{
 	max-width: 1300px;
 	margin: 0 auto;
 	position: relative;
-	width: calc(100%-60px);
 }
 
 
@@ -219,9 +209,7 @@ a .cms-edit{
 }
 /*carrusel inicio boostrap*/
 
-.carruselsec{
-margin-bottom: 100px;
-}
+
 
 .text-slide {
     text-align: center; /* Centra el texto horizontalmente */
@@ -258,19 +246,18 @@ margin-bottom: 100px;
   }
 
   .contenedorbotones{
-	padding: 30px;
-	margin-top: 5%;
+	padding: 80px;
   }
 
   .svgboton{
-	width: 50px;
-	height: 60px;
+	width: 40px;
+	height: 50px;
   }
 /*pie de pagina*/
 .pie-pagina{
 	width: 100%;
 	background-color: black;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 .pie-pagina .grupo-1{
 	width: 100%;
@@ -351,12 +338,11 @@ margin-bottom: 100px;
 	
 }
  
-.h2servicios{
+.textopage{
 	display: flex;
 	align-items: center;
 	padding: 30px;
 	justify-content:center ;
-	background-color: white;
 	color: #000;
 	text-align: center;
 	font-family: ABeeZee;
@@ -372,62 +358,179 @@ margin-bottom: 100px;
 	text-align: center;
 }
 
-/*imagenes de servicios*/
 
-.contenedorservicios{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+
+/*galeria de servicios disponibles*/
+.serviciosdisponibles{
 	background-color: white;
-	margin-top: 30px;
+	}
 	
-}
-
-.contenedor1{
+	.galeria-serviciosdisponibles{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
 	
-	position: relative;
-	text-align: center;
-	max-width: 100%;
-}
-
-.contenedor1 img{
-	width: 1400px;
-	height: 800px;
-	max-width: 100%;
-}
-
-.conttexto{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.781);
+	.imagen-servicios{
+		width: 26%;
+		margin-bottom: 20px;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,5);
+		height: 500px;
+	}
 	
-}
+	.imagen-servicios > img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+	
+	.hover-galeria{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		/*transform: scale(0);*/
+		background: hsla(40, 100%, 25%, 0.7);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.hover-galeria p{
+		color: white;
+		font-family: Nothing You Could Do;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	
+	.imagen-servicios:hover .hover-galeria{
+		transform: scale(0);
+	}
 
-.texto{
-	display: inline-block;
-	color: black;
-	padding: 10px;
+	.tituloserv{
+	color: rgba(119, 67, 3, 0.63);
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 30px;
+	font-size: 48px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	
+	display: flex;
+	align-items: center;
+	padding: 30px;
+	justify-content:center;
 }
 
+/*pagina habitaciones*/
+.imagenprincipalhabitaciones{
+	background-image: url(../images/habitacion\ 9\ lado\ perfil\ izquierdo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	background-position: center center;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*carrusel habitaciones*/
+.contenedor-80 {
+	width: 80%;
+	margin: 0 auto;
+	border:solid black 3px;
+	border-radius: 40px;
+
+}
+
+.carousel-inner .carousel-item img {
+	width: 100%;
+	height: 600px; /* Establece la altura deseada para todas las imágenes */
+	object-fit: cover; /* Escala la imagen para que cubra completamente su contenedor */
+}
+.tipohabitaciontexto{
+	background-color: black;
+	color: white;
+	border: none;
+}
+.cont-precio-detallehabitacion{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+/*pagina contacto*/
+.textocontacto{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 30px;
+	background-color: black;
+	text-align: center;
+	
+}
+.contactodiseño{
+	width: 100%;
+	background-color: white;
+	margin-top: 40px;
+}
+.contactodiseño .grupocontacto{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 50px;
+	padding: 45px 0px;
+}
+
+.contactodiseño .grupocontacto .box p{
+	color: black;
+	margin-bottom: 10px;
+}
+
+.contactodiseño .contactopie{
+	background-color: white;
+	padding: 15px 10px;
+	text-align: left;
+	color: black;
+}
+
+/*formulario contacto*/
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+label, input, textarea {
+	display: block;
+	margin-bottom: 10px;
+}
+input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+}
+input[type="submit"] {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
 @media (max-width: 768px) {
-	.pie-pagina .grupo-1{
-		width: 90%;
-		grid-template-columns: repeat(1,1fr);
-		gap: 30px;
-		padding: 35px 0px;
-	}
 	.menucontainer{
 		flex-direction: column;
 		text-align: center;
@@ -440,6 +543,33 @@ margin-bottom: 100px;
 		flex-direction: column;
 		
 	}
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 100%;
+		width: 90%;
+	
+	}
+	.galeria-serviciosdisponibles {
+		flex-direction: column;
+		align-items: center;
+		
+	  }
+	
+	  .imagen-servicios {
+		width: 100%;
+		height: auto;
+	  }
+	  .pie-pagina .grupo-1{
+		width: 90%;
+		grid-template-columns: repeat(1,1fr);
+		gap: 30px;
+		padding: 35px 0px;
+	}
+	.contactodiseño .grupocontacto{
+		width: 90%;
+		grid-template-columns: repeat(1,1fr);
+		gap: 30px;
+		padding: 35px 0px;
+	}
+	
 }
-
-
