@@ -1,5 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Montaga&family=Montserrat:wght@400;700&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Bebas+Neue&family=Montaga&family=Montserrat:wght@400;700&family=Nothing+You+Could+Do&display=swap');
+:root{
+	--dim-gray: #7a7265ff;
+	--sepia: #553805ff;
+	--raw-umber: #8e6e53ff;
+	--lion: #c69c72ff;
+	--black-bean: #2d080aff;
+}
 
 *{
     margin: 0;
@@ -108,8 +114,11 @@ header a{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 100%;
 	
 }
+
+
 .textoimagenprincipal{
 	color: white;
 	font-family: ABeeZee;
@@ -161,6 +170,14 @@ header a{
 	position: relative;
 }
 
+.textexpancar{
+	color: black;
+	font-family: 'Bebas Neue', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 4px rgba(97, 77, 22, 0.5);
+}
 
 /*grid imagenes inicio*/
 .grid {
@@ -380,6 +397,7 @@ header a{
 		cursor: pointer;
 		box-shadow: 0 0 8px 0 rgba(0,0,0,5);
 		height: 500px;
+		border-radius: 30px;
 	}
 	
 	.imagen-servicios > img{
@@ -443,17 +461,25 @@ header a{
 
 /*carrusel habitaciones*/
 .contenedor-80 {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	border:solid black 3px;
 	border-radius: 40px;
 
 }
 
+.carousel-item{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 36px;
+}
 .carousel-inner .carousel-item img {
 	width: 100%;
-	height: 600px; /* Establece la altura deseada para todas las imágenes */
+	height: 100%; /* Establece la altura deseada para todas las imágenes */
 	object-fit: cover; /* Escala la imagen para que cubra completamente su contenedor */
+	display: block;
+
 }
 .tipohabitaciontexto{
 	background-color: black;
@@ -560,6 +586,7 @@ input[type="submit"]:hover {
 		width: 100%;
 		height: auto;
 	  }
+
 	  .pie-pagina .grupo-1{
 		width: 90%;
 		grid-template-columns: repeat(1,1fr);
