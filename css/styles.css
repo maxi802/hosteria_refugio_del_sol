@@ -6,7 +6,9 @@
 	--lion: #c69c72ff;
 	--black-bean: #2d080aff;
 }
-
+p{
+	margin-bottom: 0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -138,19 +140,8 @@ header a{
 }
 
 /* contenido de tarjetas inicio*/
-.tarjetasexpand .expanded .grid-item{
+.tarjetasexpand .grid-item{
 	max-width: 800px;
-}
-
-.tarjetasexpand .grid-item>.inner{
-	background-color: rgba(255, 255, 255, 8);
-	flex: 0;
-	justify-content: center;
-	padding: 6px 30px;
-	position: relative;
-	transition: 2s;
-	text-align: center;
-	z-index: 1;
 }
 
 .tarjetasexpand{
@@ -163,12 +154,12 @@ header a{
 	overflow: visible;
 	padding-left: 8px;
 	padding-right: 8px;
-}
-.contendiotar{
 	max-width: 1300px;
 	margin: 0 auto;
 	position: relative;
 }
+
+
 
 .textexpancar{
 	color: black;
@@ -178,6 +169,7 @@ header a{
 	margin-bottom: 0;
 	text-shadow: 2px 2px 4px rgba(97, 77, 22, 0.5);
 }
+
 
 /*grid imagenes inicio*/
 .grid {
@@ -209,8 +201,22 @@ header a{
 	left: 0;
 	top: 0;
 	object-position: center;
-
+	cursor: pointer;
 }
+/*animacion grid*/ 
+.hover-animacion{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0s;
+}
+
+.hover-animacion:hover{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 0, 0);
+	position: absolute;
+}
+
 .testimonios{
 	text-align: center;
 	display: flex;
@@ -222,17 +228,13 @@ header a{
 	font-style: italic;
 	font-weight: 400;
 	line-height: normal;
-	margin-bottom: 20px;
 }
 /*carrusel inicio boostrap*/
-
-
 
 .text-slide {
     text-align: center; /* Centra el texto horizontalmente */
     display: flex;
     justify-content: center; /* Centra el texto verticalmente */
-    align-items: center;
     height: 100%; /* Asegura que el texto ocupe toda la altura del carrusel */
 	color: #553805;
 	font-family: Montserrat;
@@ -262,9 +264,7 @@ header a{
 	margin-right: 30%;
   }
 
-  .contenedorbotones{
-	padding: 80px;
-  }
+
 
   .svgboton{
 	width: 40px;
@@ -274,7 +274,6 @@ header a{
 .pie-pagina{
 	width: 100%;
 	background-color: black;
-	margin-top: 40px;
 }
 .pie-pagina .grupo-1{
 	width: 100%;
@@ -557,6 +556,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #0056b3;
 }
+
+/*cambia la altura del texto de index ya que carousel-item de habitaciones me cambia la altura*/
+.item-texto-carusell{
+	height: 400px;
+}
+
+
+
 @media (max-width: 768px) {
 	.menucontainer{
 		flex-direction: column;
