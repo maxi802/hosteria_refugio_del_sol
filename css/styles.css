@@ -117,6 +117,7 @@ header a{
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
+
 	
 }
 
@@ -272,6 +273,7 @@ header a{
   }
 /*pie de pagina*/
 .pie-pagina{
+	margin-top: 10px;
 	width: 100%;
 	background-color: black;
 }
@@ -490,6 +492,33 @@ header a{
 	align-items: center;
 	padding: 20px;
 	justify-content: space-between;
+}
+
+.tipohabitaciontexto{
+	text-align: center;
+	font-size: 25px;
+}
+.botondetallehabitacion{
+	background-color: var(--dim-gray);
+	border: solid black 1px;	
+}
+
+.botondetallehabitacion:hover{
+	background-color: var(--lion);
+	border: solid var(--sepia) 1px;
+}
+
+.botonpreciohabitacion{
+	background-color: var(--dim-gray);
+	border: solid black 1px;
+	color: white;
+}
+.iconosdespegable{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+	border-bottom:solid #000 1px;
 }
 
 /*pagina contacto*/
