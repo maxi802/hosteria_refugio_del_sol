@@ -61,13 +61,18 @@ margin: 0;
 .menucontainer{
 	max-width: 1200px;
 	margin: auto;
+	background-color:black;
 
 }
-header{
-background-color:black ;
-
+.collapse{
+	justify-content: flex-end;
 }
 
+.navbar{
+	background-color: black;
+}
+
+/*
 
 header .menucontainer{
 	display: flex;
@@ -105,7 +110,7 @@ header ul li{
 header a{
 	color: white;
 	text-decoration: none;
-}
+}*/
 
 .imagenprincipal{
 	/*background-image: url(../images/saloninicio.jpg);*/
@@ -118,8 +123,8 @@ header a{
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	background: rgb(215,148,1);
-	background: linear-gradient(90deg, rgba(215,148,1,0.7035189075630253) 17%, rgba(153,93,8,0.7) 48%, rgba(204,67,4,0.7) 100%),url(../images/saloninicio.jpg) no-repeat center center fixed;
+	background: rgb(206,143,4);
+	background: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%),url(../images/saloninicio.jpg) no-repeat center center fixed;
 }
 .hero{
 	display: flex;
@@ -745,4 +750,8 @@ input[type="submit"]:hover {
 	.reservarahoraboton{
 		margin-left: 0;
 	}
+	.custom-carousel-button {
+		margin-top: 30px;
+		margin-bottom: 0;
+	  }
 }
