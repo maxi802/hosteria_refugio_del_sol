@@ -108,7 +108,7 @@ header a{
 }
 
 .imagenprincipal{
-	background-image: url(../images/saloninicio.jpg);
+	/*background-image: url(../images/saloninicio.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
@@ -118,7 +118,8 @@ header a{
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	background: linear-gradient();
+	background: rgb(215,148,1);
+	background: linear-gradient(90deg, rgba(215,148,1,0.7035189075630253) 17%, rgba(153,93,8,0.7) 48%, rgba(204,67,4,0.7) 100%),url(../images/saloninicio.jpg) no-repeat center center fixed;
 }
 .hero{
 	display: flex;
