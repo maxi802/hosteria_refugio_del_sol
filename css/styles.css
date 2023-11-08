@@ -113,7 +113,8 @@ header a{
 }*/
 
 .imagenprincipal{
-	/*background-image: url(../images/saloninicio.jpg);*/
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/saloninicio.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
@@ -123,8 +124,6 @@ header a{
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	background: rgb(206,143,4);
-	background: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%),url(../images/saloninicio.jpg) no-repeat center center fixed;
 }
 .hero{
 	display: flex;
@@ -413,7 +412,8 @@ header a{
 
 /*servicios inicio*/
 .imagenprincipalservicios{
-	background-image: url(../images/foto\ sala.jpg);
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/saloninicio.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
@@ -528,7 +528,8 @@ header a{
 
 /*pagina habitaciones*/
 .imagenprincipalhabitaciones{
-	background-image: url(../images/habitacion\ 9\ lado\ perfil\ izquierdo.jpg);
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/habitacion\ 9\ lado\ perfil\ izquierdo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
@@ -537,6 +538,8 @@ header a{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 100%;
+
 }
 
 /*carrusel habitaciones*/
