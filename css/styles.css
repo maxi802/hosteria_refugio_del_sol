@@ -661,7 +661,186 @@ input[type="submit"]:hover {
 	height: 400px;
 }
 
+/*Pagina acerca de nosotros*/
+.imagenprincipalacercadenosotros{
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/habitacion\ 9\ perfil\ derecho.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	background-position: center center;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+}
+.contenedor1acercade{
+	padding: 10px;
+	max-width: 1200px;
+	margin-top: 40px;
+}
+.acercade1{
+	display: flex;
+}
+.acercade1 img{
+	width: 500px;
+	width: 500px;
+	padding: 20px;	
+}
+.h2-sub {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 600;
+    line-height: .4;
+}
 
+.fil {
+    text-transform: uppercase;
+    font-size: 35px;
+	color: black;
+}
+
+.head {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+ 
+.res-des{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.taste{
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/habitacion\ 9\ perfil\ derecho.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+	min-height: 65vh;
+
+}
+
+.global{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedoracercade2{
+	margin-top: 30px;
+}
+
+.container2{
+	display: flex;
+}
+.circle {
+    font-size: 1.5rem;
+    color: #3bcc75;
+    margin: 0 1.6rem;
+}
+
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.cta-btn {
+    font-size: 1.1rem;
+    background-color: #ffc845;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: .4rem;
+}
+
+
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color: var(--dim-gray);
+}
+
+.global .circle {
+    color:var(--lion);
+    margin: 2.4rem 0;
+}
+
+.hea-dark {
+    color: #252525;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+}
+
+
+
+.res-info {
+    text-align: center;
+}
+
+
+.res-des p {
+    line-height: 1.6;
+    margin-bottom: 2.4rem
+}
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.image-group img{
+	width: 300px;
+	height: 300px;
+}
+
+.pb {
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/habitacion\ 8\ perfil\ derecho\ .jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+	min-height: 65vh;
+	margin-top: 30px;
+}
+
+.container3{
+	display: flex;
+	margin: 60px;
+	gap: 20px;
+}
+.image-group3{
+	display: flex;
+	gap: 10px;
+}
+.container3 .image-group3 img{
+	width: 300px;
+	height: 100%;
+}
 
 @media (max-width: 768px) {
 	.grid {
@@ -688,10 +867,14 @@ input[type="submit"]:hover {
 		padding: 35px 0px;
 	}
 	.contactodiseño .grupocontacto{
-		width: 90%;
+		width: 80%;
 		grid-template-columns: repeat(1,1fr);
 		gap: 30px;
 		padding: 35px 0px;
+		place-items: center;
+		justify-self: center; /* Centra en el eje horizontal */
+		align-self: center; /* Centra en el eje vertical */
+		border-bottom: solid var(--lion) 1px;
 	}
 	.postbienvenidos{
 		flex-direction: column;
@@ -729,7 +912,7 @@ input[type="submit"]:hover {
 		margin-bottom: 0;
 	  }
 	  .contenedormapa{
-		width: 300px;
+		width: 100%;
 		height: 150px;
 	}
 }
