@@ -130,6 +130,12 @@ margin: 0;
 	align-items: center;
 	padding: 30px;
 	justify-content:center ;
+	color: var(--black-bean);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
 }
 
 .imagenilustracion{
@@ -293,6 +299,7 @@ margin: 0;
 	border: none;
 	box-shadow: none;
 	padding: 0;
+
   }
 
   .custom-carousel-button-prev {
@@ -385,16 +392,7 @@ margin: 0;
 	justify-content: center;
 }
 
-.imagenprincipalservicios h1{
-	color: white;
-	font-family: ABeeZee;
-	font-style: italic;
-	letter-spacing: 4px;
-	line-height: normal;
-	margin-left: 60px;
-	font-size: 64px;
-	
-}
+
  
 .textopage{
 	display: flex;
@@ -512,6 +510,9 @@ margin: 0;
 
 }
 
+.carruselcontenedorhabitaciones{
+	margin-bottom: 30px;
+}
 .carousel-item{
 	height: 500px;
 	position: relative;
@@ -709,7 +710,15 @@ input[type="submit"]:hover {
 		margin-left: 0;
 	}
 	.custom-carousel-button {
-		margin-top: 150px;
+		margin-top: 80px;
 		margin-bottom: 0;
+	  }
+}
+@media(max-width:400px){
+	.pie-pagina{
+		margin-top: 60px;
+	}
+	.custom-carousel-button {
+		margin-top: 200px;
 	  }
 }
