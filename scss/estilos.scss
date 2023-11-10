@@ -59,29 +59,19 @@
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	.textoimagenprincipal{
-		color: white;
-		font-family: ABeeZee;
-		font-style: italic;
-		letter-spacing: 4px;
-		line-height: normal;
-		margin-left: 60px;
-		font-size: 64px;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	}
-	.frase{
-		font-family: Nothing You Could Do;
-		font-size: 36px;
-		color: #FFF;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		letter-spacing: 3px;
-		margin-left: 60px;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-		text-align: left;
-	}	
 
+	
+
+}
+.textoimagenprincipal{
+	color: white;
+	font-family: ABeeZee;
+	font-style: italic;
+	letter-spacing: 4px;
+	line-height: normal;
+	margin-left: 60px;
+	font-size: 64px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .ilusbienvenidostex{
 	border-bottom: 1px solid var(--raw-umber);
@@ -92,7 +82,18 @@
 	max-width: 450px;
 	padding-bottom: 6px;
 }
-	
+.frase{
+	font-family: Nothing You Could Do;
+	font-size: 36px;
+	color: #FFF;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 3px;
+	margin-left: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: left;
+}
 
 
 .textobienvenidos{
@@ -134,21 +135,22 @@
 	padding-bottom: 30px;
 	text-align: center;
 	padding: 30px;
-	.postbienvenidos{
-		display: flex;
-		width: 100%;
-		flex-direction: row;
-		gap: 70px;
-		text-align: left;
-		.imagenilustracion{
-			width: 400px;
-			height: 100%;
-			
-		}
-	}
+
 }
 
+.postbienvenidos{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	gap: 70px;
+	text-align: left;
 
+}
+.imagenilustracion{
+	width: 400px;
+	height: 100%;
+	
+}
 /* contenido de tarjetas inicio*/
 .tarjetasexpand .grid-item{
 	max-width: 800px;
