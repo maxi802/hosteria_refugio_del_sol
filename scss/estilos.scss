@@ -53,35 +53,36 @@
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
-	.hero{
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		.textoimagenprincipal{
-			color: white;
-			font-family: ABeeZee;
-			font-style: italic;
-			letter-spacing: 4px;
-			line-height: normal;
-			margin-left: 60px;
-			font-size: 64px;
-			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-		}
-		.frase{
-			font-family: Nothing You Could Do;
-			font-size: 36px;
-			color: #FFF;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			letter-spacing: 3px;
-			margin-left: 60px;
-			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-			text-align: left;
-		}
-	}
 }
 
+.hero{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	.textoimagenprincipal{
+		color: white;
+		font-family: ABeeZee;
+		font-style: italic;
+		letter-spacing: 4px;
+		line-height: normal;
+		margin-left: 60px;
+		font-size: 64px;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+	.frase{
+		font-family: Nothing You Could Do;
+		font-size: 36px;
+		color: #FFF;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 3px;
+		margin-left: 60px;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		text-align: left;
+	}	
+
+}
 .ilusbienvenidostex{
 	border-bottom: 1px solid var(--raw-umber);
 	color: var(--raw-umber);
@@ -91,6 +92,7 @@
 	max-width: 450px;
 	padding-bottom: 6px;
 }
+	
 
 
 .textobienvenidos{
@@ -99,8 +101,19 @@
 	width: 100%;
 }
 .hostilustex{
-	font-size: 30px;
+	font-size: 40px;
 }
+
+.parrafoilustracion{
+	font-family: 'Arial', sans-serif;
+	margin: 5px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.parrafoilustracion:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+  }
 .textdesayuno{
 	display: flex;
 	align-items: center;
