@@ -58,6 +58,21 @@ a {
   background-color: black;
 }
 
+.logohosterianav {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+.navlogotex {
+  font-family: Nothing You Could Do;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+
 .imagenprincipal {
   background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/saloninicio.jpg);
   background-repeat: no-repeat;
@@ -357,7 +372,6 @@ a {
   width: 100%;
   background-color: black;
 }
-
 .pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
@@ -450,6 +464,15 @@ a {
 .textoservicio {
   color: black;
   text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: center;
+  color: var(--black-bean);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
 }
 
 /*galeria de servicios disponibles*/
@@ -613,6 +636,12 @@ a {
   height: 50px;
 }
 
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--lion);
+  border-color: var(--black-bean);
+}
+
 /*pagina contacto*/
 .textocontacto {
   color: #FFF;
@@ -645,6 +674,54 @@ a {
   padding: 45px 0px;
 }
 
+.estamosaqui {
+  color: var(--black-bean);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.contactexcliente {
+  color: var(--sepia);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  padding: 5px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.direccioncontac {
+  color: var(--sepia);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  padding: 5px;
+  text-align: left;
+}
+
+.flechaytextoverm {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.flechaytextoverm .vermapatex {
+  color: var(--sepia);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  text-align: left;
+}
+.flechaytextoverm .fa-solid {
+  color: var(--sepia);
+  font-size: 20px;
+}
+
 .contactodiseño .grupocontacto .box p {
   color: black;
   margin-bottom: 10px;
@@ -654,13 +731,14 @@ a {
   background-color: white;
   padding: 15px 10px;
   text-align: center;
-  color: black;
+  color: var(--sepia);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .contenedormapa {
   width: 600px;
   height: 450px;
-  border: solid black 1px;
+  border: solid var(--sepia) 2px;
   border-radius: 30px;
 }
 
@@ -674,6 +752,8 @@ a {
 .formulariocontacto {
   width: 300px;
   margin: 0 auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
 }
 
 label, input, textarea {
@@ -684,10 +764,19 @@ label, input, textarea {
 input[type=text], textarea {
   width: 100%;
   padding: 10px;
+  border: solid var(--sepia) 2px;
+  border-radius: 10px;
+}
+
+input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid var(--sepia) 2px;
+  border-radius: 10px;
 }
 
 input[type=submit] {
-  background-color: #007BFF;
+  background-color: var(--dim-gray);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -695,7 +784,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: var(--lion);
 }
 
 /*cambia la altura del texto de index ya que carousel-item de habitaciones me cambia la altura*/
