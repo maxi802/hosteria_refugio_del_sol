@@ -1,0 +1,52 @@
+/*texto testimonios del carrusel*/
+.testimonios{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #553805;
+	font-family: ABeeZee;
+	font-size: 60px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	padding: 15px;
+}
+/*carrusel texto inicio boostrap*/
+.text-slide {
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra el texto verticalmente */
+    height: 100%; /* Asegura que el texto ocupe toda la altura del carrusel */
+	color: #553805;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+  }
+
+  /* Estilos para centrar los botones */
+  .custom-carousel-button {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+
+  }
+
+  .custom-carousel-button-prev {
+    left: 20px;
+	margin-left: 30%;
+  }
+  .custom-carousel-button-next {
+    right: 20px;
+	margin-right: 30%;
+  }
+
+  .svgboton{
+	width: 40px;
+	height: 50px;
+  }

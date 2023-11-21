@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 100%;
+		width: 90%;
+	
+	}
+	.serviciosdisponibles .galeria-serviciosdisponibles {
+		flex-direction: column;
+		align-items: center;
+		
+	  }
+	
+	  .imagen-servicios {
+		width: 100%;
+		height: 450px;
+	  }
+
+	  .pie-pagina .grupo-1{
+		width: 90%;
+		grid-template-columns: repeat(1,1fr);
+		gap: 30px;
+		padding: 35px 0px;
+	}
+	.contactodiseño .grupocontacto{
+		width: 80%;
+		grid-template-columns: repeat(1,1fr);
+		gap: 30px;
+		padding: 35px 0px;
+		place-items: center;
+		justify-self: center; /* Centra en el eje horizontal */
+		align-self: center; /* Centra en el eje vertical */
+		border-bottom: solid var(--lion) 1px;
+	}
+	.contenedorilustracion .postbienvenidos{
+		flex-direction: column;
+		align-items: center;
+	}
+	.textoimagenprincipal{
+		text-align: center;
+		font-size: 40px;
+		margin: 0;
+		padding: 5px;
+	}
+	.frase{
+		text-align: center;
+		font-size: 30px;
+		margin: 0;
+	}
+	.contenedorilustracion .postbienvenidos .imagenilustracion{
+		width: 100%;
+		height: 100%;
+	}
+	.imagenprincipal{
+		align-items: center;
+	}
+	.imagenprincipalhabitaciones{
+		align-items: center;
+	}
+	.imagenprincipalservicios{
+		align-items: center;
+	}
+	.reservarahoraboton{
+		margin-left: 0;
+	}
+	.custom-carousel-button {
+		margin-top: 80px;
+		margin-bottom: 0;
+	  }
+	  .contenedormapa{
+		width: 100%;
+		height: 150px;
+	}
+	.acercade1{
+		flex-direction: column;
+	}
+	.container2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.image-group {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	
+	}
+	.container3{
+		flex-direction: column;
+	}
+	.image-group3{
+		flex-direction: column;
+		align-items: center;
+	}
+	.container3 .image-group3 img{
+		max-width: 100%;
+	}
+}
+@media(max-width:400px){
+	.pie-pagina{
+		margin-top: 60px;
+	}
+	.custom-carousel-button {
+		margin-top: 200px;
+	  }
+	  
+}

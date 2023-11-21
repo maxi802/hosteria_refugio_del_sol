@@ -1,0 +1,223 @@
+.reservarahoraboton{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,5);
+	box-shadow: 2px 2px 10px rgba(0,0,0,5);
+	color: black;
+	background-color: white;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+.reservarahoraboton:hover{
+	background-color: rgba(119, 67, 3, 0.63);
+}
+
+.imagenprincipal{
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/saloninicio.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	background-position: center center;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.frase{
+	font-family: Nothing You Could Do;
+	font-size: 36px;
+	color: #FFF;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 3px;
+	margin-left: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: left;
+}
+.contenedorilustracion{
+	background-color: white;
+	overflow: visible;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	padding: 30px;
+	.postbienvenidos{
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		gap: 70px;
+		text-align: left;
+		.imagenilustracion{
+			width: 400px;
+			height: 100%;
+		}
+	}
+	.textobienvenidos{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		.ilusbienvenidostex{
+			border-bottom: 1px solid var(--raw-umber);
+			color: var(--raw-umber);
+			display: block;
+			line-height: 1.5;
+			letter-spacing: normal;
+			max-width: 450px;
+			padding-bottom: 6px;
+		}
+		.hostilustex{
+			font-size: 40px;
+		}
+		.parrafoilustracion{
+			font-family: 'Arial', sans-serif;
+			margin: 5px;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		.parrafoilustracion:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s ease-in-out;
+		  }
+	}
+}
+
+
+/* contenido de tarjetas inicio*/
+
+.tarjetasexpand{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	text-align: center;
+	.contendiotar{
+		overflow: visible;
+		padding-left: 8px;
+		padding-right: 8px;
+		max-width: 1300px;
+		margin: 0 auto;
+		position: relative;
+		.grid-item{
+			max-width: 800px;
+		}
+	}
+}
+
+/*grid imagenes inicio*/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 25px;
+	max-width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s
+
+}
+
+.grid-item {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid var(--raw-umber);
+	box-shadow: 2px 2px 10px rgba(0,0,0,5);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+	img {
+		display: block;
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+		left: 0;
+		top: 0;
+		object-position: center;
+		transition-property: all;
+		transition-duration: 1s;
+		transition-delay: 0s
+		
+	}
+}
+
+/*animacion grid*/ 
+.tarjeta-index-expand{
+	transition-property: all;
+	transition-timing-function: ease;
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+	max-width: 800px;
+	display: flex;
+	opacity: 1;
+	transform: translate(0);
+	overflow: hidden;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s
+
+}
+
+.tarjeta-index-expand:hover{
+	cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s
+}
+
+.tarjeta-index-expand:hover .hover-animacion{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.885);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s
+}
+
+.tarjeta-index-expand:hover .textexpancar{
+	opacity: 1;
+	visibility: visible;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s
+}
+.hover-animacion{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.885);
+	justify-content: center;
+	flex-direction: column;
+	position:absolute;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+	.textexpancar{
+		color: black;
+		font-family: 'Bebas Neue', sans-serif;
+		font-style: italic;
+		font-size: 20px;
+		margin-bottom: 0;
+		text-shadow: 2px 2px 4px rgba(97, 77, 22, 0.5);
+		transition-property: all;
+		transition-duration: 1s;
+		transition-delay: 0s
+	}
+}

@@ -1,0 +1,108 @@
+/*Servicios*/
+
+/*servicios inicio*/
+.imagenprincipalservicios{
+	background-image: linear-gradient(90deg, rgba(206,143,4,0.5) 7%, rgba(153,93,8,0.5) 79%, rgba(204,67,4,0.5) 100%)
+	,url(../images/foto\ sala.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	background-position: center center;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+}
+.textopage{
+	display: flex;
+	align-items: center;
+	padding: 30px;
+	justify-content:center ;
+	color: #000;
+	text-align: center;
+	font-family: ABeeZee;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 3px;
+}
+
+.textoservicio{
+	color: black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	padding: 25px;
+	justify-content:center ;
+	color: var(--black-bean);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+}
+
+/*galeria de servicios disponibles*/
+.serviciosdisponibles{
+	background-color: white;
+	.tituloserv{
+		color: rgba(119, 67, 3, 0.63);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		display: flex;
+		align-items: center;
+		padding: 30px;
+		justify-content:center;
+	}
+	.galeria-serviciosdisponibles{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
+}
+	.imagen-servicios{
+		width: 26%;
+		margin-bottom: 20px;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,5);
+		height: 500px;
+		border-radius: 30px;
+	}
+	
+	.imagen-servicios > img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		max-width: 100%;
+	}
+	
+	.hover-galeria{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		/*transform: scale(0);*/
+		background: hsla(40, 100%, 25%, 0.7);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p{
+			color: white;
+			font-family: Nothing You Could Do;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	.imagen-servicios:hover .hover-galeria{
+		transform: scale(0);
+	}

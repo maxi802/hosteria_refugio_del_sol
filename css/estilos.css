@@ -27,27 +27,15 @@ a {
   margin: 0;
 }
 
-.reservarahoraboton {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  color: black;
-  background-color: white;
-  margin-top: 30px;
+.textoimagenprincipal {
+  color: white;
+  font-family: ABeeZee;
+  font-style: italic;
+  letter-spacing: 4px;
+  line-height: normal;
   margin-left: 60px;
-}
-
-.reservarahoraboton:hover {
-  background-color: rgba(119, 67, 3, 0.63);
-}
-
-.menucontainer {
-  max-width: 1200px;
-  margin: auto;
-  background-color: black;
+  font-size: 64px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .collapse {
@@ -73,6 +61,23 @@ a {
   margin-left: 10px;
 }
 
+.reservarahoraboton {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  color: black;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.reservarahoraboton:hover {
+  background-color: rgba(119, 67, 3, 0.63);
+}
+
 .imagenprincipal {
   background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/saloninicio.jpg);
   background-repeat: no-repeat;
@@ -92,27 +97,6 @@ a {
   text-align: left;
 }
 
-.textoimagenprincipal {
-  color: white;
-  font-family: ABeeZee;
-  font-style: italic;
-  letter-spacing: 4px;
-  line-height: normal;
-  margin-left: 60px;
-  font-size: 64px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.ilusbienvenidostex {
-  border-bottom: 1px solid var(--raw-umber);
-  color: var(--raw-umber);
-  display: block;
-  line-height: 1.5;
-  letter-spacing: normal;
-  max-width: 450px;
-  padding-bottom: 6px;
-}
-
 .frase {
   font-family: Nothing You Could Do;
   font-size: 36px;
@@ -126,41 +110,6 @@ a {
   text-align: left;
 }
 
-.textobienvenidos {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.hostilustex {
-  font-size: 40px;
-}
-
-.parrafoilustracion {
-  font-family: "Arial", sans-serif;
-  margin: 5px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.parrafoilustracion:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-
-.textdesayuno {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-  justify-content: center;
-  color: var(--black-bean);
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-}
-
 .contenedorilustracion {
   background-color: white;
   overflow: visible;
@@ -169,31 +118,51 @@ a {
   text-align: center;
   padding: 30px;
 }
-
-.postbienvenidos {
+.contenedorilustracion .postbienvenidos {
   display: flex;
   width: 100%;
   flex-direction: row;
   gap: 70px;
   text-align: left;
 }
-
-.imagenilustracion {
+.contenedorilustracion .postbienvenidos .imagenilustracion {
   width: 400px;
   height: 100%;
 }
-
-/* contenido de tarjetas inicio*/
-.tarjetasexpand .grid-item {
-  max-width: 800px;
+.contenedorilustracion .textobienvenidos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contenedorilustracion .textobienvenidos .ilusbienvenidostex {
+  border-bottom: 1px solid var(--raw-umber);
+  color: var(--raw-umber);
+  display: block;
+  line-height: 1.5;
+  letter-spacing: normal;
+  max-width: 450px;
+  padding-bottom: 6px;
+}
+.contenedorilustracion .textobienvenidos .hostilustex {
+  font-size: 40px;
+}
+.contenedorilustracion .textobienvenidos .parrafoilustracion {
+  font-family: "Arial", sans-serif;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contenedorilustracion .textobienvenidos .parrafoilustracion:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
+/* contenido de tarjetas inicio*/
 .tarjetasexpand {
   padding-bottom: 50px;
   padding-top: 50px;
   text-align: center;
 }
-
 .tarjetasexpand .contendiotar {
   overflow: visible;
   padding-left: 8px;
@@ -202,17 +171,8 @@ a {
   margin: 0 auto;
   position: relative;
 }
-
-.textexpancar {
-  color: black;
-  font-family: "Bebas Neue", sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  margin-bottom: 0;
-  text-shadow: 2px 2px 4px rgba(97, 77, 22, 0.5);
-  transition-property: all;
-  transition-duration: 1s;
-  transition-delay: 0s;
+.tarjetasexpand .contendiotar .grid-item {
+  max-width: 800px;
 }
 
 /*grid imagenes inicio*/
@@ -311,6 +271,17 @@ a {
   transition-duration: 1s;
   transition-delay: 0s;
 }
+.hover-animacion .textexpancar {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(97, 77, 22, 0.5);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
 
 /*texto testimonios del carrusel*/
 .testimonios {
@@ -327,7 +298,7 @@ a {
   padding: 15px;
 }
 
-/*carrusel inicio boostrap*/
+/*carrusel texto inicio boostrap*/
 .text-slide {
   text-align: center; /* Centra el texto horizontalmente */
   display: flex;
@@ -433,6 +404,7 @@ a {
   font-size: 15px;
 }
 
+/*Servicios*/
 /*servicios inicio*/
 .imagenprincipalservicios {
   background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/foto\ sala.jpg);
@@ -479,8 +451,20 @@ a {
 .serviciosdisponibles {
   background-color: white;
 }
-
-.galeria-serviciosdisponibles {
+.serviciosdisponibles .tituloserv {
+  color: rgba(119, 67, 3, 0.63);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+}
+.serviciosdisponibles .galeria-serviciosdisponibles {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -503,6 +487,7 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+  max-width: 100%;
 }
 
 .hover-galeria {
@@ -529,20 +514,6 @@ a {
   transform: scale(0);
 }
 
-.tituloserv {
-  color: rgba(119, 67, 3, 0.63);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  padding: 30px;
-  justify-content: center;
-}
-
 /*pagina habitaciones*/
 .imagenprincipalhabitaciones {
   background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/habitacion\ 9\ lado\ perfil\ izquierdo.jpg);
@@ -555,6 +526,19 @@ a {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
+}
+
+.textdesayuno {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  color: var(--black-bean);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 
 /*carrusel habitaciones*/
@@ -796,7 +780,7 @@ input[type=submit]:hover {
 
 /*Pagina acerca de nosotros*/
 .imagenprincipalacercadenosotros {
-  background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/habitacion\ 9\ perfil\ derecho.jpg);
+  background-image: linear-gradient(90deg, rgba(206, 143, 4, 0.5) 7%, rgba(153, 93, 8, 0.5) 79%, rgba(204, 67, 4, 0.5) 100%), url(../images/habitacion\ 9\ lado\ perfil\ izquierdo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -813,15 +797,14 @@ input[type=submit]:hover {
   max-width: 1200px;
   margin-top: 40px;
 }
-
-.acercade1 {
+.contenedor1acercade .acercade1 {
   display: flex;
 }
-
-.acercade1 img {
+.contenedor1acercade .acercade1 img {
   width: 500px;
   width: 500px;
   padding: 20px;
+  max-width: 100%;
 }
 
 .h2-sub {
@@ -943,6 +926,7 @@ input[type=submit]:hover {
 .image-group img {
   width: 300px;
   height: 300px;
+  max-width: 100%;
 }
 
 .pb {
@@ -975,6 +959,10 @@ input[type=submit]:hover {
   width: 300px;
   height: 100%;
   object-fit: contain;
+}
+
+.descubriacerca {
+  padding: 30px;
 }
 
 /*ANIMACIONES*/
@@ -1094,13 +1082,13 @@ input[type=submit]:hover {
     max-width: 100%;
     width: 90%;
   }
-  .galeria-serviciosdisponibles {
+  .serviciosdisponibles .galeria-serviciosdisponibles {
     flex-direction: column;
     align-items: center;
   }
   .imagen-servicios {
     width: 100%;
-    height: auto;
+    height: 450px;
   }
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -1118,7 +1106,7 @@ input[type=submit]:hover {
     align-self: center; /* Centra en el eje vertical */
     border-bottom: solid var(--lion) 1px;
   }
-  .postbienvenidos {
+  .contenedorilustracion .postbienvenidos {
     flex-direction: column;
     align-items: center;
   }
@@ -1133,7 +1121,7 @@ input[type=submit]:hover {
     font-size: 30px;
     margin: 0;
   }
-  .imagenilustracion {
+  .contenedorilustracion .postbienvenidos .imagenilustracion {
     width: 100%;
     height: 100%;
   }
@@ -1162,6 +1150,7 @@ input[type=submit]:hover {
   }
   .container2 {
     flex-direction: column;
+    align-items: center;
   }
   .image-group {
     grid-template-columns: repeat(1, 1fr);
@@ -1172,6 +1161,10 @@ input[type=submit]:hover {
   }
   .image-group3 {
     flex-direction: column;
+    align-items: center;
+  }
+  .container3 .image-group3 img {
+    max-width: 100%;
   }
 }
 @media (max-width: 400px) {

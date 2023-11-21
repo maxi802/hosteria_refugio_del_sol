@@ -1,0 +1,144 @@
+/*pagina contacto*/
+.textocontacto{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 30px;
+	background-color: black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contactodiseño{
+	width: 100%;
+	background-color: white;
+	margin-top: 40px;
+	.grupocontacto{
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		gap: 50px;
+		padding: 45px 0px;
+	}
+}
+
+.estamosaqui{
+	color: var(--black-bean);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 30px;
+	background-color: white;
+	text-align: center;
+	
+}
+
+.contactexcliente{
+	color: var(--sepia);
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+	line-height: normal;
+	padding: 5px;
+	text-align: left;
+	margin-left: 10px;
+
+}
+.direccioncontac{
+	color: var(--sepia);
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+	line-height: normal;
+	padding: 5px;
+	text-align: left;
+}
+.flechaytextoverm{
+	display: flex;	
+	gap: 10px;
+	padding: 10px;
+	.vermapatex{
+		color: var(--sepia);
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 20px;
+		line-height: normal;
+		text-align: left;
+	}
+	.fa-solid{
+		color: var(--sepia);
+		font-size: 20px;
+	}
+}
+.contactodiseño .grupocontacto .box p{
+	color: black;
+	margin-bottom: 10px;
+}
+
+.contactodiseño .contacto-pie {
+	background-color: white;
+	padding: 15px 10px;
+	text-align: center;
+	color: var(--sepia);
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.contenedormapa{
+	width: 600px;
+	height: 450px;
+	border: solid	var(--sepia) 2px;
+	border-radius: 30px;
+	max-width: 100%;
+}
+
+.contenedormapa iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	max-width: 100%;
+}
+/*formulario contacto*/
+.formulariocontacto {
+	width: 300px;
+	margin: 0 auto;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 15px;
+
+}
+label, input, textarea {
+	display: block;
+	margin-bottom: 10px;
+}
+input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	border: solid	var(--sepia) 2px;
+	border-radius: 10px;
+}
+input[type="email"], textarea{
+	width: 100%;
+	padding: 10px;
+	border: solid	var(--sepia) 2px;
+	border-radius: 10px;
+}
+input[type="submit"] {
+	background-color: var(--dim-gray);
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: var(--lion);
+}
+
+/*cambia la altura del texto de index ya que carousel-item de habitaciones me cambia la altura*/
+.item-texto-carusell{
+	height: 400px;
+}
