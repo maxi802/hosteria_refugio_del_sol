@@ -171,6 +171,10 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.tarjetasexpand .contendiotar .grid-item {
+  max-width: 100%;
+}
+
 /*grid imagenes inicio*/
 .grid {
   display: grid;
