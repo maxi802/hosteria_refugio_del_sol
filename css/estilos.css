@@ -171,10 +171,6 @@ a {
   margin: 0 auto;
   position: relative;
 }
-.tarjetasexpand .contendiotar .grid-item {
-  max-width: 800px;
-}
-
 /*grid imagenes inicio*/
 .grid {
   display: grid;
@@ -221,7 +217,6 @@ a {
   transition-timing-function: ease;
   transition-duration: 0.5s;
   transition-delay: 0s;
-  max-width: 800px;
   display: flex;
   opacity: 1;
   transform: translate(0);
